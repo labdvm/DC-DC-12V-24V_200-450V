@@ -162,7 +162,7 @@
 		(path "/0895748d-504f-4b0d-8937-c8ff4809e5f6")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start 7.581 -0.599)
 			(end 7.581 0.599)
@@ -2537,7 +2537,7 @@
 		(path "/b0bb0590-ea70-4a9e-bfdf-11c423345429")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -2.58 -3.27)
 			(end -2.58 1.371)
@@ -3035,7 +3035,7 @@
 		(path "/f2ab8d96-58b5-412f-b265-f85539df19c5")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start 7.62 -3.81)
 			(end -2.54 -3.81)
@@ -3632,7 +3632,7 @@
 		(at 160.75 96.25)
 		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
 		(tags "test point THT pad")
-		(property "Reference" "TP1"
+		(property "Reference" "PAD12"
 			(at 0 -2.398 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -3686,7 +3686,7 @@
 		(path "/ca6ddd8b-1e37-4b96-9c32-582ae2323630")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr through_hole)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -3736,7 +3736,7 @@
 				)
 			)
 		)
-		(property "Value" "UC3843_DIP8"
+		(property "Value" "UC3843BN_DIP8"
 			(at 3.81 9.95 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3776,7 +3776,7 @@
 		(path "/47791521-e4d8-4089-b309-d5b487b7b104")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start 1.16 -1.33)
 			(end 1.16 8.95)
@@ -4422,7 +4422,7 @@
 		(at 160.75 86.25)
 		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
 		(tags "test point THT pad")
-		(property "Reference" "TP5"
+		(property "Reference" "PAD10"
 			(at 0 -2.398 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -4475,7 +4475,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr through_hole)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -4504,7 +4504,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 4 "GND")
+			(net 8 "Net-(D2-K)")
 			(uuid "17d5b187-0981-4a31-a298-5bd209379a4c")
 		)
 		(embedded_fonts no)
@@ -4728,7 +4728,7 @@
 				)
 			)
 		)
-		(property "Value" "15mR"
+		(property "Value" "0.015R"
 			(at 0 3.18 90)
 			(layer "F.Fab")
 			(uuid "c84ebdbb-8b62-4519-b5a7-3cdb5c64b2a7")
@@ -4769,7 +4769,7 @@
 		(path "/ec280d16-2cc3-4168-b88c-819ab5f60082")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(fp_line
 			(start -0.797369 2.21)
 			(end 0.797369 2.21)
@@ -4918,7 +4918,7 @@
 		(at 135.75 91.25)
 		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
 		(tags "test point THT pad")
-		(property "Reference" "TP5"
+		(property "Reference" "PAD2"
 			(at 0 -2.398 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -4971,7 +4971,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr through_hole)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -5258,6 +5258,95 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
+		(layer "F.Cu")
+		(uuid "5937342b-eabc-4cf8-926f-052f632b3917")
+		(at 160.75 81.25)
+		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
+		(tags "test point THT pad")
+		(property "Reference" "PAD9"
+			(at 0 -2.398 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2de022b6-d637-470b-93c5-151ae1568c5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 2.55 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97f7d18f-3c69-4dad-8ed8-149151299988")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2fb8f131-00e4-441f-8911-d713beb7252a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96631548-4876-49dc-a25a-4283227d99ed")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr through_hole)
+		(fp_circle
+			(center 0 0)
+			(end 0 1.75)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "a4eebd8b-87e1-4112-9125-74fbb68b3b82")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "7230390f-9ad0-4243-acd3-bb5a00997566")
+		)
+		(pad "9" thru_hole circle
+			(at 0 0)
+			(size 3 3)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "24ea09a7-b341-4d48-8861-7a4f0310cc93")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
@@ -6407,7 +6496,7 @@
 		(at 135.75 96.25)
 		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
 		(tags "test point THT pad")
-		(property "Reference" "TP1"
+		(property "Reference" "PAD1"
 			(at 0 -2.398 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -6461,7 +6550,7 @@
 		(path "/ca6ddd8b-1e37-4b96-9c32-582ae2323630")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr through_hole)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -6757,7 +6846,7 @@
 		(path "/9dbcb6e9-6724-4f59-813e-eb100f595818")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start 7.62 -3.81)
 			(end -2.54 -3.81)
@@ -6950,7 +7039,7 @@
 		(at 160.75 76.25)
 		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
 		(tags "test point THT pad")
-		(property "Reference" "TP5"
+		(property "Reference" "PAD8"
 			(at 0 -2.398 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7003,7 +7092,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr through_hole)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -7043,7 +7132,7 @@
 		(at 160.75 71.25)
 		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
 		(tags "test point THT pad")
-		(property "Reference" "TP2"
+		(property "Reference" "PAD7"
 			(at 0 -2.398 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7097,7 +7186,7 @@
 		(path "/1c5c0d04-f663-42b2-9454-0c122f89eb6a")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr through_hole)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -7136,7 +7225,7 @@
 		(at 135.75 76.25)
 		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
 		(tags "test point THT pad")
-		(property "Reference" "TP5"
+		(property "Reference" "PAD5"
 			(at 0 -2.398 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7189,7 +7278,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr through_hole)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -7229,7 +7318,7 @@
 		(at 135.75 71.25)
 		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
 		(tags "test point THT pad")
-		(property "Reference" "TP2"
+		(property "Reference" "PAD6"
 			(at 0 -2.398 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7283,7 +7372,7 @@
 		(path "/1c5c0d04-f663-42b2-9454-0c122f89eb6a")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr through_hole)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -7333,7 +7422,7 @@
 				)
 			)
 		)
-		(property "Value" "FES8JT"
+		(property "Value" "MUR860"
 			(at 2.54 2.5 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7399,7 +7488,7 @@
 		(path "/1e91c678-1c0f-4909-89a7-106e62aa2817")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start 7.66 -3.27)
 			(end 7.66 1.371)
@@ -7834,7 +7923,7 @@
 		(at 160.75 91.25)
 		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
 		(tags "test point THT pad")
-		(property "Reference" "TP5"
+		(property "Reference" "PAD11"
 			(at 0 -2.398 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7887,7 +7976,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr through_hole)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -7916,7 +8005,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 4 "GND")
+			(net 8 "Net-(D2-K)")
 			(uuid "e706e2c5-5d44-4845-9ad1-f56465599fab")
 		)
 		(embedded_fonts no)
@@ -7980,7 +8069,7 @@
 		(path "/7b5e2a87-4c16-43ee-8321-de8046c839e7")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start 5.831 -0.533)
 			(end 5.831 0.533)
@@ -9909,7 +9998,7 @@
 		(path "/07525e05-4f10-46bc-8986-13d1fff0a9d1")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start 0.935 -2.28)
 			(end 0.935 -0.494)
@@ -10747,107 +10836,15 @@
 	)
 	(footprint "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
 		(layer "F.Cu")
-		(uuid "d6981b94-a1a8-41b7-b4f5-1fdfd641c58e")
-		(at 160.75 81.25)
-		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
-		(tags "test point THT pad")
-		(property "Reference" "TP5"
-			(at 0 -2.398 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "420f42e9-2ae2-44ad-b4b0-f8e60d70b8cd")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "e"
-			(at 0 2.55 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "61587971-687f-4a9d-9ed4-6277fb89ceaa")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "afa9d6ce-1690-4022-9549-d4301c399692")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e83116a4-dc37-4e41-b985-beaebaf3e9a5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "Pin* Test*")
-		(sheetname "/")
-		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr exclude_from_pos_files)
-		(fp_circle
-			(center 0 0)
-			(end 0 1.75)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.SilkS")
-			(uuid "efe5bbad-d953-4ad5-aac8-34548fd2dbc1")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 2 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "88d77874-4afa-48f0-8e80-c9c17477acd7")
-		)
-		(pad "9" thru_hole circle
-			(at 0 0)
-			(size 3 3)
-			(drill 1)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "3ba062cd-623e-4a5d-aeb6-be9a22d1d867")
-		)
-		(embedded_fonts no)
-	)
-	(footprint "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
-		(layer "F.Cu")
 		(uuid "d7e0be00-203e-414d-ad7f-2a916a9b2f98")
 		(at 135.75 81.25)
 		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
 		(tags "test point THT pad")
-		(property "Reference" "TP5"
+		(property "Reference" "PAD4"
 			(at 0 -2.398 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "3cda31a7-878a-40d7-80b7-9d5e645671cc")
+			(uuid "a5f02674-5c98-46a4-b4eb-0922ee826ed9")
 			(effects
 				(font
 					(size 1 1)
@@ -10855,11 +10852,11 @@
 				)
 			)
 		)
-		(property "Value" "e"
+		(property "Value" ""
 			(at 0 2.55 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cc284406-90b0-4b45-88c5-8b5b02235b26")
+			(uuid "ca8aa25c-bbc3-4c08-968a-a96cb9395ff2")
 			(effects
 				(font
 					(size 1 1)
@@ -10872,7 +10869,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6eb67aab-c595-4e88-9693-31b8d950c532")
+			(uuid "001ea30c-4942-4712-aa25-6710fa48ef9d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10885,7 +10882,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "82fb85d1-8b19-40f7-9344-92c9a04b5d24")
+			(uuid "fbfc85e8-ac85-42ad-b4ee-bf6bb51faa5f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10896,7 +10893,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr through_hole)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -11575,7 +11572,7 @@
 		(at 135.75 86.25)
 		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
 		(tags "test point THT pad")
-		(property "Reference" "TP5"
+		(property "Reference" "PAD3"
 			(at 0 -2.398 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -11628,7 +11625,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(sheetname "/")
 		(sheetfile "DC-DC 12-450V.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr through_hole)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -12040,15 +12037,6 @@
 		(uuid "f3b080b2-23e0-4c44-aae7-1ac56f3d1883")
 	)
 	(segment
-		(start 180.5 86.29)
-		(end 180.5 91.96)
-		(width 2)
-		(layers "F.Cu" "F.Mask")
-		(solder_mask_margin 0)
-		(net 4)
-		(uuid "0a528a77-0c49-40f5-97e4-ecdedaf11a9e")
-	)
-	(segment
 		(start 171.5 62.6875)
 		(end 171.5 67.5)
 		(width 0.35)
@@ -12095,15 +12083,6 @@
 		(layer "F.Cu")
 		(net 4)
 		(uuid "d1b3f77e-fc40-4ee4-af44-da9e11cec42e")
-	)
-	(segment
-		(start 160.75 91.25)
-		(end 160.75 86.25)
-		(width 2)
-		(layers "F.Cu" "F.Mask")
-		(solder_mask_margin 0)
-		(net 4)
-		(uuid "e02e979e-77a5-47d8-8a57-6d45592d17fe")
 	)
 	(segment
 		(start 149.799997 67.75)
@@ -12194,13 +12173,29 @@
 		(uuid "fbfd8d9c-bd41-4376-b735-6525a8f8d3b9")
 	)
 	(segment
-		(start 138.75 104.75)
-		(end 125.75 104.75)
+		(start 180.5 86.29)
+		(end 180.5 91.96)
 		(width 3)
 		(layers "B.Cu" "B.Mask")
 		(solder_mask_margin 0)
 		(net 4)
-		(uuid "195c3956-d661-4621-9b7f-deaf0260a76e")
+		(uuid "041e50a8-a9d8-49cd-913d-015427c70df8")
+	)
+	(segment
+		(start 168.152651 93.75)
+		(end 168.152651 81.347349)
+		(width 1.5)
+		(layer "B.Cu")
+		(net 4)
+		(uuid "1d5cd985-033b-4153-9b5b-5f630da4eeb2")
+	)
+	(segment
+		(start 168.152651 81.347349)
+		(end 168.25 81.25)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 4)
+		(uuid "21623fc5-75a9-4ac0-ba6c-e223ea0031d4")
 	)
 	(segment
 		(start 125.75 104.75)
@@ -12211,24 +12206,6 @@
 		(uuid "351bd6cd-2b2d-4789-90be-bd9b119dde84")
 	)
 	(segment
-		(start 160.75 91.25)
-		(end 152.25 91.25)
-		(width 3)
-		(layers "B.Cu" "B.Mask")
-		(solder_mask_margin 0)
-		(net 4)
-		(uuid "3b5f64c8-f74c-4798-bcd4-c1d1e38a2a4f")
-	)
-	(segment
-		(start 180.5 86.29)
-		(end 173.21 86.29)
-		(width 2)
-		(layers "B.Cu" "B.Mask")
-		(solder_mask_margin 0)
-		(net 4)
-		(uuid "3cf34bbe-4c9f-432c-9359-2da1e0694856")
-	)
-	(segment
 		(start 149 67.75)
 		(end 152.5 67.75)
 		(width 0.6)
@@ -12237,12 +12214,29 @@
 		(uuid "4274fa7a-79b3-4fef-adc3-60881cf3f742")
 	)
 	(segment
+		(start 174.25 81.75)
+		(end 173.75 81.25)
+		(width 3)
+		(layer "B.Cu")
+		(net 4)
+		(uuid "50f4d637-ff39-474d-8545-84a71bc54664")
+	)
+	(segment
 		(start 180.5 86.29)
 		(end 178.79 86.29)
 		(width 3)
 		(layer "B.Cu")
 		(net 4)
 		(uuid "58d0bbed-07a4-464b-bb5b-ad8ff94676d4")
+	)
+	(segment
+		(start 173.75 81.25)
+		(end 168.25 81.25)
+		(width 3)
+		(layers "B.Cu" "B.Mask")
+		(solder_mask_margin 0)
+		(net 4)
+		(uuid "5b880b60-bdec-4a04-ac14-8e4c7b611897")
 	)
 	(segment
 		(start 174.25 81.75)
@@ -12263,13 +12257,13 @@
 		(uuid "6b42314f-aa39-4c70-89d4-b9b87ffbc4ba")
 	)
 	(segment
-		(start 173.21 86.29)
-		(end 168.152651 91.347349)
-		(width 2)
+		(start 158 81.25)
+		(end 144.25 95)
+		(width 3)
 		(layers "B.Cu" "B.Mask")
 		(solder_mask_margin 0)
 		(net 4)
-		(uuid "6bc7d7ee-1025-439e-9280-d582ad3f2d35")
+		(uuid "8000f5f7-9c6e-4114-ad6f-c13d561c7d96")
 	)
 	(segment
 		(start 125.617677 104.617677)
@@ -12283,32 +12277,26 @@
 		(start 171.5 67.5)
 		(end 150.5 67.5)
 		(width 3)
-		(layer "B.Cu")
+		(layers "B.Cu" "B.Mask")
+		(solder_mask_margin 0)
 		(net 4)
 		(uuid "96590e8f-380f-4747-8a60-db5b9437d7ef")
 	)
 	(segment
-		(start 160.75 91.25)
-		(end 168.055302 91.25)
-		(width 2)
+		(start 144.25 95)
+		(end 144.25 104.75)
+		(width 3)
 		(layers "B.Cu" "B.Mask")
 		(solder_mask_margin 0)
 		(net 4)
-		(uuid "ae11bd1c-b6a6-4318-b423-2d4d80048951")
-	)
-	(segment
-		(start 168.055302 91.25)
-		(end 168.152651 91.347349)
-		(width 2)
-		(layer "B.Cu")
-		(net 4)
-		(uuid "d4a0d373-a1e9-4889-aae8-9a26f6fc671c")
+		(uuid "98a788fc-70b0-4636-8adb-c74d5125586a")
 	)
 	(segment
 		(start 174.25 67.5)
 		(end 171.5 67.5)
 		(width 3)
-		(layer "B.Cu")
+		(layers "B.Cu" "B.Mask")
+		(solder_mask_margin 0)
 		(net 4)
 		(uuid "d8cfe2ef-6c2d-4d30-895b-3997e94b3694")
 	)
@@ -12321,21 +12309,22 @@
 		(uuid "e22a5bfe-49e5-42c0-9e67-6373e6b853f1")
 	)
 	(segment
-		(start 168.152651 91.347349)
-		(end 168.152651 93.75)
-		(width 2)
-		(layer "B.Cu")
-		(net 4)
-		(uuid "e5c8d8b0-3294-4363-bcd8-df553034343a")
-	)
-	(segment
-		(start 152.25 91.25)
-		(end 138.75 104.75)
+		(start 144.25 104.75)
+		(end 125.75 104.75)
 		(width 3)
 		(layers "B.Cu" "B.Mask")
 		(solder_mask_margin 0)
 		(net 4)
-		(uuid "ea72dfb4-7cf3-4e1b-a6e3-93f5199d0173")
+		(uuid "f3ef91fb-37f6-4022-bf7f-131d8019d62e")
+	)
+	(segment
+		(start 168.25 81.25)
+		(end 158 81.25)
+		(width 3)
+		(layers "B.Cu" "B.Mask")
+		(solder_mask_margin 0)
+		(net 4)
+		(uuid "f50f9cb1-f30a-416b-818e-a13fb5b4cdd1")
 	)
 	(segment
 		(start 113.5 90.74)
@@ -12540,15 +12529,15 @@
 	(segment
 		(start 171.652651 89.115151)
 		(end 171.652651 93.75)
-		(width 1)
+		(width 1.5)
 		(layer "F.Cu")
 		(net 8)
 		(uuid "01f45f43-1eb1-4e78-a715-341337091969")
 	)
 	(segment
 		(start 168.75 86.2125)
-		(end 171.652651 89.115151)
-		(width 1)
+		(end 168.7875 86.25)
+		(width 1.5)
 		(layer "F.Cu")
 		(net 8)
 		(uuid "41b3c4bc-76be-46d2-be6d-6e63fca6ceb4")
@@ -12586,12 +12575,36 @@
 		(uuid "8e7ff0a6-a543-499a-8258-eff600726d6c")
 	)
 	(segment
+		(start 168.7875 86.25)
+		(end 171.652651 89.115151)
+		(width 1.5)
+		(layer "F.Cu")
+		(net 8)
+		(uuid "b7e75d36-0b93-4e85-a195-1b280d49c669")
+	)
+	(segment
 		(start 171.652651 93.75)
 		(end 171.652651 100.152651)
 		(width 2)
 		(layer "F.Cu")
 		(net 8)
 		(uuid "ca5aef31-e7c8-4d93-aa61-147de4706eae")
+	)
+	(segment
+		(start 160.75 91.25)
+		(end 160.75 86.25)
+		(width 2)
+		(layer "F.Cu")
+		(net 8)
+		(uuid "e02e979e-77a5-47d8-8a57-6d45592d17fe")
+	)
+	(segment
+		(start 160.75 86.25)
+		(end 168.7875 86.25)
+		(width 1.5)
+		(layer "F.Cu")
+		(net 8)
+		(uuid "e0e3689e-ffa9-40fd-9b22-6e0bdc0a3d37")
 	)
 	(segment
 		(start 162.7625 62.6625)

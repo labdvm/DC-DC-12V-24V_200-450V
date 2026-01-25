@@ -4009,7 +4009,7 @@
 				)
 			)
 		)
-		(property "Value" "FES8JT"
+		(property "Value" "MUR860"
 			(at 217.17 67.31 0)
 			(effects
 				(font
@@ -4567,7 +4567,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "UC3843_DIP8"
+		(property "Value" "UC3843BN_DIP8"
 			(at 148.1933 88.9 0)
 			(effects
 				(font
@@ -6970,7 +6970,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15mR"
+		(property "Value" "0.015R"
 			(at 188.214 113.538 0)
 			(effects
 				(font
