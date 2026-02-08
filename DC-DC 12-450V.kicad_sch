@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "DC-DC 12>450V")
-		(date "2026-02-01")
-		(rev "V1.3")
+		(date "2026-02-08")
+		(rev "V1.4")
 		(company "Z32IT")
 	)
 	(lib_symbols
@@ -485,174 +485,6 @@
 					(at 0 -2.54 90)
 					(length 2.032)
 					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:D_Filled"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Filled"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Diode, filled shape"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_Filled_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Filled_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1553,12 +1385,11 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:SD12_SOD323"
+		(symbol "Diode:UF5407"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -1572,7 +1403,7 @@
 					)
 				)
 			)
-			(property "Value" "SD12_SOD323"
+			(property "Value" "UF5407"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -1580,8 +1411,8 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_SOD-323"
-				(at 0 -5.08 0)
+			(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+				(at 0 -4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1589,7 +1420,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sd_c_datasheet.pdf.pdf"
+			(property "Datasheet" "http://www.vishay.com/docs/88756/uf5400.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1598,7 +1429,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "12V, 450W Discrete Bidirectional TVS Diode, SOD-323"
+			(property "Description" "800V 3A Soft Recovery Ultrafast Rectifier Diode, DO-201AD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1607,7 +1438,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "transient voltage suppressor thyrector transil"
+			(property "Sim.Device" "D"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1616,7 +1447,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "D?SOD?323*"
+			(property "Sim.Pins" "1=K 2=A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1625,13 +1456,31 @@
 					(hide yes)
 				)
 			)
-			(symbol "SD12_SOD323_0_1"
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?201AD*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "UF5407_0_1"
 				(polyline
 					(pts
-						(xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)
+						(xy -1.27 1.27) (xy -1.27 -1.27)
 					)
 					(stroke
-						(width 0.2032)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1640,10 +1489,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0.2032)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1662,24 +1511,12 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
-			(symbol "SD12_SOD323_1_1"
+			(symbol "UF5407_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
-					(name "A1"
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1697,7 +1534,193 @@
 				(pin passive line
 					(at 3.81 0 180)
 					(length 2.54)
-					(name "A2"
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3052,6 +3075,12 @@
 		(uuid "49e55da0-09a6-4635-b197-ed958ef5a56a")
 	)
 	(junction
+		(at 187.96 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57a93e24-6b2e-4983-8bd0-9ccc97be9f14")
+	)
+	(junction
 		(at 130.81 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3062,6 +3091,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f8a1b63-e992-47d6-bd17-aa877db8eb3b")
+	)
+	(junction
+		(at 187.96 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "904228b0-a9ae-4a8a-82c7-32679b261e49")
 	)
 	(junction
 		(at 146.05 86.36)
@@ -3086,6 +3121,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cf15f442-5b71-4b95-ba1c-9069fe148e97")
+	)
+	(junction
+		(at 130.81 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d511e0e9-a842-483f-adac-c876bf7d74b9")
 	)
 	(junction
 		(at 172.72 93.98)
@@ -3183,6 +3224,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 111.76) (xy 195.58 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c5c6aeb-529e-49b6-be48-1c2a998660b1")
+	)
+	(wire
+		(pts
 			(xy 170.18 50.8) (xy 209.55 50.8)
 		)
 		(stroke
@@ -3273,6 +3324,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 115.57) (xy 187.96 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e036260-525d-4e09-8fab-83025e9285dd")
+	)
+	(wire
+		(pts
 			(xy 128.27 93.98) (xy 133.35 93.98)
 		)
 		(stroke
@@ -3303,13 +3364,13 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 86.36) (xy 148.59 86.36)
+			(xy 187.96 86.36) (xy 187.96 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4311f800-3518-421e-ab04-97af272ac772")
+		(uuid "467ddfd8-42c8-49fa-b961-8a70a9a28512")
 	)
 	(wire
 		(pts
@@ -3320,6 +3381,16 @@
 			(type default)
 		)
 		(uuid "47b7046e-db4d-46aa-a493-1dc61fd36dcb")
+	)
+	(wire
+		(pts
+			(xy 124.46 59.69) (xy 130.81 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "486a2bf0-0c21-4dfc-aed5-e5824df22a98")
 	)
 	(wire
 		(pts
@@ -3423,7 +3494,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 58.42) (xy 130.81 60.96)
+			(xy 130.81 55.88) (xy 130.81 59.69)
 		)
 		(stroke
 			(width 0)
@@ -3563,13 +3634,23 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 113.03) (xy 187.96 116.84)
+			(xy 187.96 113.03) (xy 187.96 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "80b0c456-6c6c-48e0-ba48-2e70ecc22aa5")
+	)
+	(wire
+		(pts
+			(xy 130.81 59.69) (xy 130.81 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "817e92c6-7dbb-440c-8ffd-2a20735ad5a8")
 	)
 	(wire
 		(pts
@@ -3630,6 +3711,16 @@
 			(type default)
 		)
 		(uuid "90a1f221-4c71-4a3d-8a74-816b7efd85c4")
+	)
+	(wire
+		(pts
+			(xy 195.58 115.57) (xy 187.96 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "948dce7d-e502-446c-a349-91d85a6f3778")
 	)
 	(wire
 		(pts
@@ -3723,6 +3814,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 81.28) (xy 198.12 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac0a67df-8103-4ae1-a8d4-a73c7cd01756")
+	)
+	(wire
+		(pts
 			(xy 100.33 105.41) (xy 100.33 107.95)
 		)
 		(stroke
@@ -3793,7 +3894,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 81.28) (xy 187.96 88.9)
+			(xy 187.96 81.28) (xy 187.96 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3803,13 +3904,13 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 86.36) (xy 160.02 86.36)
+			(xy 113.03 59.69) (xy 116.84 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bb5dc678-2482-4b64-b2a4-8abcac172b23")
+		(uuid "be67ff9b-12af-4761-af9f-bbcfc279774f")
 	)
 	(wire
 		(pts
@@ -3843,6 +3944,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 104.14) (xy 195.58 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7c59435-3992-470d-aa54-50ddb113c8ef")
+	)
+	(wire
+		(pts
 			(xy 146.05 86.36) (xy 146.05 88.9)
 		)
 		(stroke
@@ -3860,6 +3971,16 @@
 			(type default)
 		)
 		(uuid "d0a9969b-a8fc-4ef9-8949-268fe54779e5")
+	)
+	(wire
+		(pts
+			(xy 146.05 76.2) (xy 146.05 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3cb8a73-c973-4ec4-b19d-2ae77c1e92fc")
 	)
 	(wire
 		(pts
@@ -3893,13 +4014,13 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 77.47) (xy 146.05 80.01)
+			(xy 198.12 86.36) (xy 187.96 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d99c39c1-8973-4e48-9b9e-46a7a15181c9")
+		(uuid "daa418e4-33b3-4a9c-a6d1-0e7ff4a25c4c")
 	)
 	(wire
 		(pts
@@ -3953,16 +4074,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 81.28) (xy 200.66 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb8b9e2a-4a96-4873-a674-171c63631efc")
-	)
-	(wire
-		(pts
 			(xy 125.73 90.17) (xy 128.27 90.17)
 		)
 		(stroke
@@ -4001,17 +4112,7 @@
 		)
 		(uuid "fa1ccc9a-3ed4-417d-ad2e-1d9c616e7ba5")
 	)
-	(label "+12V"
-		(at 199.39 81.28 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "181dc5eb-f17c-4131-9043-5b8798ad3e57")
-	)
-	(label "+12V"
+	(label "+12~24V"
 		(at 187.96 71.12 180)
 		(effects
 			(font
@@ -4072,7 +4173,7 @@
 		(uuid "c3a844f4-d760-48bb-8ba4-169cd8ea582d")
 	)
 	(label "VCC"
-		(at 130.81 58.42 90)
+		(at 130.81 55.88 90)
 		(effects
 			(font
 				(size 1 1)
@@ -4183,7 +4284,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1500u/16V"
+		(property "Value" "1000u/35V"
 			(at 92.71 89.2809 0)
 			(effects
 				(font
@@ -4583,11 +4684,11 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Filled")
+		(lib_id "Diode:UF5407")
 		(at 210.82 71.12 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -4600,7 +4701,7 @@
 				)
 			)
 		)
-		(property "Value" "MUR860"
+		(property "Value" "UF5407-8"
 			(at 210.82 67.31 0)
 			(effects
 				(font
@@ -4608,7 +4709,16 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-2_Vertical"
+		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+			(at 210.82 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88756/uf5400.pdf"
 			(at 210.82 71.12 0)
 			(effects
 				(font
@@ -4617,16 +4727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, filled shape"
+		(property "Description" "800V 3A Soft Recovery Ultrafast Rectifier Diode, DO-201AD"
 			(at 210.82 71.12 0)
 			(effects
 				(font
@@ -4660,7 +4761,7 @@
 			(uuid "83a09440-3208-47d6-a387-76104f1e0b34")
 		)
 		(instances
-			(project ""
+			(project "DC-DC 12-450V"
 				(path "/7e93cb89-656a-4c84-b4b1-b684d904b642"
 					(reference "D2")
 					(unit 1)
@@ -4687,7 +4788,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+12~24V"
 			(at 77.47 73.66 0)
 			(effects
 				(font
@@ -4753,7 +4854,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+12~24V"
 			(at 88.9 73.66 0)
 			(effects
 				(font
@@ -5244,16 +5345,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.5A/13.2V"
+		(property "Value" "1.5A/24V"
 			(at 146.812 78.994 0)
 			(effects
 				(font
 					(size 1 1)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+		(property "Footprint" "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
 			(at 147.32 87.63 0)
 			(effects
 				(font
@@ -5288,76 +5390,9 @@
 			(uuid "5166b9bf-e6d2-4599-b58a-d2c852f8fd23")
 		)
 		(instances
-			(project ""
+			(project "DC-DC 12-450V"
 				(path "/7e93cb89-656a-4c84-b4b1-b684d904b642"
 					(reference "F2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:SD12_SOD323")
-		(at 152.4 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4824e4a8-d69d-4ff1-8583-ffcaa936e863")
-		(property "Reference" "D4"
-			(at 152.146 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PESD12VL1BA"
-			(at 153.162 83.566 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 152.4 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sd_c_datasheet.pdf.pdf"
-			(at 152.4 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "12V, 450W Discrete Bidirectional TVS Diode, SOD-323"
-			(at 152.4 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7a329ffd-d1e2-4f31-ae9f-87f81ad5ee05")
-		)
-		(pin "2"
-			(uuid "318abd74-a71d-4490-a136-c0c240ce5cf4")
-		)
-		(instances
-			(project ""
-				(path "/7e93cb89-656a-4c84-b4b1-b684d904b642"
-					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -5367,9 +5402,9 @@
 		(lib_id "Transformer:TEZ10.0-D-1")
 		(at 193.04 76.2 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "565e1179-4e84-4246-8af3-d66ee1aa8929")
@@ -5381,7 +5416,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "EC2828"
 			(at 193.0781 68.58 0)
 			(effects
 				(font
@@ -5847,6 +5882,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 113.03 59.69 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76f3d2b7-85f4-441a-988f-7b9cc4640648")
+		(property "Reference" "#PWR09"
+			(at 106.68 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8bca043b-7f8d-4e2a-9dbe-aaaa680d4d33")
+		)
+		(instances
+			(project "DC-DC 12-450V"
+				(path "/7e93cb89-656a-4c84-b4b1-b684d904b642"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 223.52 82.55 0)
 		(unit 1)
@@ -6069,7 +6170,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "2K2"
 			(at 74.93 85.09 90)
 			(effects
 				(font
@@ -6138,7 +6239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+12~24V"
 			(at 62.23 69.85 0)
 			(effects
 				(font
@@ -6338,11 +6439,11 @@
 				)
 			)
 		)
-		(property "Value" "12V input"
+		(property "Value" "12~24V input"
 			(at 57.15 88.9 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -6383,6 +6484,76 @@
 			(project ""
 				(path "/7e93cb89-656a-4c84-b4b1-b684d904b642"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 195.58 107.95 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a591f9ea-3a83-49ed-9287-a72a3d896e65")
+		(property "Reference" "JP1"
+			(at 198.12 106.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 198.12 109.2199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 195.58 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 195.58 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "820ead58-bdd4-44c3-a6fc-388303eb5500")
+		)
+		(pin "2"
+			(uuid "40411023-8953-4405-a34d-54e115c4afc7")
+		)
+		(instances
+			(project "DC-DC 12-450V"
+				(path "/7e93cb89-656a-4c84-b4b1-b684d904b642"
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -6539,7 +6710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+12~24V"
 			(at 187.96 54.61 0)
 			(effects
 				(font
@@ -6940,73 +7111,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 160.02 86.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c2cabf8a-a9f9-4a95-bd06-676d2ddf35f6")
-		(property "Reference" "#PWR021"
-			(at 166.37 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 163.83 86.3599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d15f4ab0-e2b4-451d-898b-5014913701a9")
-		)
-		(instances
-			(project "DC-DC 12-450V"
-				(path "/7e93cb89-656a-4c84-b4b1-b684d904b642"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 104.14 102.87 90)
 		(unit 1)
@@ -7086,7 +7190,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 146.05 77.47 0)
+		(at 146.05 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7095,7 +7199,7 @@
 		(fields_autoplaced yes)
 		(uuid "d0bfbcd0-ae07-4e08-9264-4e4c5dffb4aa")
 		(property "Reference" "#PWR04"
-			(at 146.05 81.28 0)
+			(at 146.05 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7103,8 +7207,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 146.05 72.39 0)
+		(property "Value" "+12~24V"
+			(at 146.05 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7112,7 +7216,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 77.47 0)
+			(at 146.05 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7121,7 +7225,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 77.47 0)
+			(at 146.05 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7130,7 +7234,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 146.05 77.47 0)
+			(at 146.05 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7145,6 +7249,74 @@
 			(project "DC-DC 12-450V"
 				(path "/7e93cb89-656a-4c84-b4b1-b684d904b642"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 120.65 59.69 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d366223c-5f7c-4a25-a0b9-98dd167bb5d2")
+		(property "Reference" "C9"
+			(at 121.539 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100u/35V"
+			(at 121.539 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm"
+			(at 116.84 60.6552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 120.65 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "acfc29b1-b7bd-401e-ac45-ac36ef250f79")
+		)
+		(pin "1"
+			(uuid "e2182e73-9b8a-42f4-bf4a-d630749ecb7e")
+		)
+		(instances
+			(project "DC-DC 12-450V"
+				(path "/7e93cb89-656a-4c84-b4b1-b684d904b642"
+					(reference "C9")
 					(unit 1)
 				)
 			)
