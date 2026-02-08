@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "DC-DC 12>450V")
-		(date "2026-02-05")
-		(rev "V2.0")
+		(date "2026-02-08")
+		(rev "V2.1")
 		(company "Z32IT")
 	)
 	(lib_symbols
@@ -485,174 +485,6 @@
 					(at 0 -2.54 90)
 					(length 2.032)
 					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:D_Filled"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Filled"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Diode, filled shape"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_Filled_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Filled_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1536,6 +1368,359 @@
 					(at 0 -2.54 90)
 					(length 0.762)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Diode:UF5407"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "UF5407"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/88756/uf5400.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "800V 3A Soft Recovery Ultrafast Rectifier Diode, DO-201AD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?201AD*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "UF5407_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "UF5407_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2920,10 +3105,22 @@
 		(uuid "8bf00933-f736-4ea7-a613-e1be988fd201")
 	)
 	(junction
+		(at 187.96 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8dff70f3-90fa-473b-b927-c261f4cde136")
+	)
+	(junction
 		(at 133.35 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f8a1b63-e992-47d6-bd17-aa877db8eb3b")
+	)
+	(junction
+		(at 146.05 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bff65dff-6c57-4fc4-91ac-940048b44886")
 	)
 	(junction
 		(at 146.05 86.36)
@@ -3005,6 +3202,26 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 105.41) (xy 196.85 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "083538dd-3734-4c5c-abd7-f24b247442d6")
+	)
+	(wire
+		(pts
+			(xy 146.05 78.74) (xy 146.05 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08d5fdca-4841-4780-a967-48d1ddd78684")
+	)
+	(wire
+		(pts
 			(xy 104.14 99.06) (xy 104.14 96.52)
 		)
 		(stroke
@@ -3032,6 +3249,16 @@
 			(type default)
 		)
 		(uuid "1228cd62-61c4-49fc-a9f3-ebaeec264bcf")
+	)
+	(wire
+		(pts
+			(xy 196.85 115.57) (xy 187.96 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12e47a61-b537-4963-82af-daa6dfbe3b89")
 	)
 	(wire
 		(pts
@@ -3435,7 +3662,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 113.03) (xy 187.96 116.84)
+			(xy 187.96 113.03) (xy 187.96 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3472,6 +3699,16 @@
 			(type default)
 		)
 		(uuid "83baab32-0d04-49b3-b107-f78b7fd99ae8")
+	)
+	(wire
+		(pts
+			(xy 146.05 86.36) (xy 154.94 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8488bf09-f508-462f-9b03-7f52a24a7e9e")
 	)
 	(wire
 		(pts
@@ -3542,6 +3779,16 @@
 			(type default)
 		)
 		(uuid "96701ea9-d463-4e70-9e06-5626ba94bff7")
+	)
+	(wire
+		(pts
+			(xy 196.85 113.03) (xy 196.85 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "976837c6-5400-4bf6-bebd-de5236d6b355")
 	)
 	(wire
 		(pts
@@ -3652,6 +3899,16 @@
 			(type default)
 		)
 		(uuid "ac0a67df-8103-4ae1-a8d4-a73c7cd01756")
+	)
+	(wire
+		(pts
+			(xy 146.05 78.74) (xy 154.94 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae80f7cb-3d58-4c67-b85e-ef2f91efcfd3")
 	)
 	(wire
 		(pts
@@ -3785,6 +4042,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 104.14) (xy 187.96 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cba0c098-de4e-4f7e-be17-67f2a44d57f5")
+	)
+	(wire
+		(pts
 			(xy 135.89 86.36) (xy 138.43 86.36)
 		)
 		(stroke
@@ -3845,7 +4112,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 77.47) (xy 146.05 80.01)
+			(xy 146.05 77.47) (xy 146.05 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3965,6 +4232,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 115.57) (xy 187.96 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5ef87cd-f53e-4bc6-9fa4-2b6455c19e42")
+	)
+	(wire
+		(pts
 			(xy 170.18 58.42) (xy 170.18 60.96)
 		)
 		(stroke
@@ -3983,7 +4260,7 @@
 		)
 		(uuid "fe500e65-8ed6-4181-a040-270cf8940f4e")
 	)
-	(label "+12V"
+	(label "+12~24V"
 		(at 187.96 71.12 180)
 		(effects
 			(font
@@ -4043,7 +4320,7 @@
 		)
 		(uuid "c3a844f4-d760-48bb-8ba4-169cd8ea582d")
 	)
-	(label "+12V"
+	(label "+12~24V"
 		(at 33.02 73.66 90)
 		(effects
 			(font
@@ -4165,7 +4442,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1000u/16V"
+		(property "Value" "1000u/35V"
 			(at 92.71 89.2809 0)
 			(effects
 				(font
@@ -4436,6 +4713,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 154.94 82.55 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "133632dc-862a-410c-9cc9-54d23ac3bf72")
+		(property "Reference" "JP2"
+			(at 157.48 81.2799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 157.48 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 154.94 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 154.94 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9985ca0-2a75-4ef9-9d84-f9f65910dc7a")
+		)
+		(pin "2"
+			(uuid "1ef8386d-2395-46d5-93c1-b6817cfc5c54")
+		)
+		(instances
+			(project "DC-DC 12-450V V2"
+				(path "/7e93cb89-656a-4c84-b4b1-b684d904b642"
+					(reference "JP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 172.72 101.6 0)
 		(unit 1)
@@ -4641,11 +4988,11 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Filled")
+		(lib_id "Diode:UF5407")
 		(at 210.82 71.12 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -4658,7 +5005,7 @@
 				)
 			)
 		)
-		(property "Value" "MUR860"
+		(property "Value" "UF5407-8"
 			(at 210.82 67.31 0)
 			(effects
 				(font
@@ -4666,7 +5013,16 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-2_Vertical"
+		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+			(at 210.82 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88756/uf5400.pdf"
 			(at 210.82 71.12 0)
 			(effects
 				(font
@@ -4675,16 +5031,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, filled shape"
+		(property "Description" "800V 3A Soft Recovery Ultrafast Rectifier Diode, DO-201AD"
 			(at 210.82 71.12 0)
 			(effects
 				(font
@@ -4745,12 +5092,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 77.47 73.66 0)
+		(property "Value" "+12~24V"
+			(at 80.01 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4811,12 +5159,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 88.9 73.66 0)
+		(property "Value" "+12~24V"
+			(at 91.44 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -5369,7 +5718,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.5A/13.2V"
+		(property "Value" "1.5A/24V"
 			(at 146.812 78.994 0)
 			(effects
 				(font
@@ -5378,7 +5727,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+		(property "Footprint" "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
 			(at 147.32 87.63 0)
 			(effects
 				(font
@@ -6128,7 +6477,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "2K2"
 			(at 74.93 85.09 90)
 			(effects
 				(font
@@ -6328,7 +6677,7 @@
 				)
 			)
 		)
-		(property "Value" "100u/16V"
+		(property "Value" "100u/35V"
 			(at 113.919 55.88 90)
 			(effects
 				(font
@@ -6455,22 +6804,23 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9dbcb6e9-6724-4f59-813e-eb100f595818")
 		(property "Reference" "J1"
-			(at 66.04 100.33 0)
+			(at 68.58 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "12V input"
-			(at 66.04 97.79 0)
+		(property "Value" "12~24V input"
+			(at 61.468 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
@@ -6510,6 +6860,76 @@
 			(project ""
 				(path "/7e93cb89-656a-4c84-b4b1-b684d904b642"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 196.85 109.22 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a591f9ea-3a83-49ed-9287-a72a3d896e65")
+		(property "Reference" "JP1"
+			(at 199.39 107.9499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 199.39 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 196.85 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 196.85 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "820ead58-bdd4-44c3-a6fc-388303eb5500")
+		)
+		(pin "2"
+			(uuid "40411023-8953-4405-a34d-54e115c4afc7")
+		)
+		(instances
+			(project ""
+				(path "/7e93cb89-656a-4c84-b4b1-b684d904b642"
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -6666,12 +7086,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 187.96 54.61 0)
+		(property "Value" "+12~24V"
+			(at 190.5 58.42 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7229,7 +7650,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+12~24V"
 			(at 146.05 72.39 0)
 			(effects
 				(font
